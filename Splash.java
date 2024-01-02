@@ -9,7 +9,7 @@ import android.os.Handler;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
+ 
 public class Splash extends AppCompatActivity {
 
     @Override
