@@ -114,7 +114,6 @@ private ImageView back;
 //                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //                startActivity(i);
 
-
             }
         });
 
@@ -158,7 +157,6 @@ private ImageView back;
                 });
             }
         });
-
 
     }
 
