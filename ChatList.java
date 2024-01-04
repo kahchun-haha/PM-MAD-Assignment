@@ -58,7 +58,6 @@ private ChatListAdpater chatListAdpater;
         bottomBar.setOnNavigationItemReselectedListener(this);
 
 
-
         listView = findViewById(R.id.chatList);
         list = new ArrayList<>();
 
@@ -209,7 +208,6 @@ private ChatListAdpater chatListAdpater;
     @Override
     public void onNavigationItemReselected(@NonNull MenuItem item) {
         if(item.getItemId()==R.id.home){
-
 
         }
         else if(item.getItemId()==R.id.messaging){
