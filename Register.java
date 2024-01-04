@@ -46,7 +46,6 @@ public class Register extends AppCompatActivity {
 
         duplicateName = new CheckDuplicateName(false);
 
-
         mAuth = FirebaseAuth.getInstance();
 
         username = findViewById(R.id.register_username);
