@@ -69,9 +69,6 @@ private ImageView back;
         return fragment;
     }
 
-
-
-
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
@@ -97,8 +94,6 @@ private ImageView back;
         System.out.println("fragment onCreateView()");
         return inflater.inflate(R.layout.fragment_add_post, container, false);
     }
-
-
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
