@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Forum">
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/forum_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_white_gradient" />
+
+
+<!--    <ImageView-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/back_in_forum"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="77dp"-->
+<!--        android:background="@drawable/icon_backshape"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.048"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/myFragment"-->
+<!--        app:srcCompat="@drawable/back_foreground" />-->
+
+    <ListView
+
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/postList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forum_pageTitle"
+        app:layout_constraintBottom_toTopOf="@+id/navigationBar_forum"/>
+
+
+
+    <ImageView
+        android:id="@+id/add_post"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+
+        android:layout_marginTop="552dp"
+        android:background="@drawable/icon_backshape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/postList"
+        app:srcCompat="@drawable/add_foreground" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationBar_forum"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="676dp"
+            android:background="@color/grey"
+            app:labelVisibilityMode="labeled"
+            app:itemIconSize="48dp"
+            app:itemPaddingTop="1dp"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/icon_changer"
+            app:itemPaddingBottom="6dp"
+            app:itemTextColor="@drawable/icon_changer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_nav">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    <TextView
+        android:id="@+id/forum_pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Forum"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myFragment"
+        app:layout_constraintHorizontal_bias="0.498"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/myFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".addNote">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/back_in_addNote"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/icon_backshape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_foreground" />
+
+
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/whenNote"
+        android:layout_width="368dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/chat_input"
+        android:ems="10"
+        android:hint="Date"
+        android:textColorHint="@color/dark_grey"
+        android:maxLines="2"
+        android:inputType="textMultiLine"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/when_holder"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="@+id/when_holder"
+        app:layout_constraintTop_toTopOf="@+id/when_holder" />
+
+    <ImageView
+        android:id="@+id/when_holder"
+        android:layout_width="395dp"
+        android:layout_height="388dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chat_list_bubble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/whatNote"
+        android:layout_width="362dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/chat_input"
+        android:ems="10"
+        android:gravity="start"
+        android:textColorHint="@color/dark_grey"
+        android:hint="Enter description"
+        android:inputType="textMultiLine"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/whenNote"
+        app:layout_constraintStart_toStartOf="@+id/whenNote"
+        app:layout_constraintTop_toBottomOf="@+id/whenNote" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/submitNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:text="Add Note"
+        app:layout_constraintEnd_toEndOf="@+id/whatNote"
+        app:layout_constraintTop_toBottomOf="@+id/whatNote" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

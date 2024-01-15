@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    android:theme="@style/Theme.WhiteText"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:contentScrim="@color/black"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap"
+            app:toolbarId="@id/toolbar">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dv31"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Selangor records highest number of domestic violence cases"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:fontFamily="@font/times_nr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Deputy minister says 4,690 out of the 22,908 cases reported nationwide from 2020 until August this year were in Selangor."
+                android:textSize="16sp"
+                android:fontFamily="@font/helvetica" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Bernama - 28 Oct 2023, 2:57pm"
+                android:textSize="18sp"
+                android:fontFamily="@font/times_nr" />
+
+            <!-- First TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="PUTRAJAYA: Selangor recorded the highest number of domestic violence cases, at 4,690, compared with other states nationwide for the period from 2020 to August 2023."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <!-- Second TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="He said Selangor has become the state with the highest number of such cases over the past three years compared to other states, while for the period from January to August this year alone, 813 cases were reported."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Deputy women, family and community development minister Aiman Athirah Sabu said the number was based on police statistics, which showed 22,908 cases of domestic violence reported nationwide."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="In 2021, there was a sharp increase in cases in the country to 7,468, compared with 5,260 cases in 2020."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="The number dropped to 6,540 last year, the Sepang MP said after the launch of the Selangor-level Semarak Waja Squad 2023."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="To address the issue, the ministry established the Waja Squad in 2021, which has drawn the participation of 328,558 members, consisting of 253,973 female and 74,585 male members."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="In the meantime, he said with regard to defamatory statements related to the allegation of an order to close 200 tahfiz centres in the state, the investigation paper on the case has been completed."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“The Waja Squad acts as an agent of change to deal with violence against women in the community,” Aiman said.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="There are 26,910 members in the Waja Squad in Selangor."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Aiman said 1,012 Waja Squad psychosocial programmes have been carried out in communities nationwide, with 72,942 people being treated."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='"They also carried out 104 psychosocial programmes involving 12,506 people in Selangor.”'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Aiman said the Waja Squad programmes had created a good synergy between the government and the community in dealing with violence against women."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="She hoped the Selangor-level Semarak Waja Squad 2023 programme would continue to provide better awareness and protection to women from all forms of violence and discrimination."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <!-- Add more views as needed -->
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

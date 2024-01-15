@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    android:theme="@style/Theme.WhiteText"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:contentScrim="@color/black"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap"
+            app:toolbarId="@id/toolbar">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dv71"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Woman in alleged domestic violence case urges police for fair probe"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:fontFamily="@font/times_nr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="By DURIE RAINER FONG"
+                android:textSize="18sp"
+                android:fontFamily="@font/times_nr" />
+
+            <!-- First TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="KOTA KINABALU: A 31-year-old woman in a domestic dispute with her husband, who is a senior state civil servant, is seeking for the police to assist her in obtaining an interim protective order (IPO) from the court."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <!-- Second TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="At a press conference organised by Kota Kinabalu Parti Warisan division here on Wednesday (Aug 9), former state assistant minister Melanie Chia said that in cases of domestic violence, the law requires an IPO for the alleged victim pending the full investigation into the case."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“I am surprised that no IPO has been issued for the woman who has lodged three reports against her husband in the last five months,” she said at a media conference where the victim, who wanted to be identified only as Wong, was present to highlight the alleged domestic violence by her husband.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“The police are supposed to assist victims to file an application for and obtain an IPO from the court," said the Kota Kinabalu Warisan deputy chief, adding that the Domestic Violence Act provided for the action.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Wong claimed that she first lodged a report against her husband, aged 57, on April 19, alleging that she was hurt after being assaulted by the latter at their home here."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="She said, however, that she withdrew the report the following day after her husband apologised to her."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="She said she lodged the third report on July 18 after she was allegedly roughed up by her husband again at their house."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“I was also about two months pregnant when he attacked me. After that (alleged) incident, I left home,” Wong said, adding the husband knew she was carrying a baby then.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="She added she lodged another report on July 19 to “reactivate” the April 19 report that she had withdrawn so that the police could look into her case."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="She said her husband had in turn lodged a police report against her on July 26 for allegedly damaging property during their quarrel at his office."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Wong said that she felt that her case was progressing slowly and urged the police to look thoroughly into the matter."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“I only want justice,” she said, adding that she was on police bail now.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Also present at the press conference was Warisan vice-president and Tanjung Aru assemblyman Datuk Junz Wong who hoped the police would probe the case fairly."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="The Star has reached out to the Kota Kinabalu police department for comments."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

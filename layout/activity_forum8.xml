@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    android:theme="@style/Theme.WhiteText"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:contentScrim="@color/black"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap"
+            app:toolbarId="@id/toolbar">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dv91"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Alarming domestic violence statistics"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:fontFamily="@font/times_nr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Tharani Nair"
+                android:textSize="18sp"
+                android:fontFamily="@font/times_nr" />
+
+            <!-- First TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="PETALING JAYA: Domestic violence in Malaysia continues to be a big concern, with many cases going unreported, according to NGOs."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <!-- Second TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="While case numbers fluctuate from year to year, the fact remains that it is a serious problem that needs to be addressed."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="In 2020, there were 1,047 reported cases of domestic violence. This rose to 1,234 in 2021 but fell to 843 cases last year, said the Social Welfare Department."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Its Director-General Norazman Othman said: “From 2020 to last year, a total of 1,708 cases were reported involving those between the ages of 22 and 39. The most common complaints were physical violence, which involved 1,417 cases."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“The second highest age group were those between 40 and 59, with a total of 1,157 cases recorded. Complaints involving this age group included mental torture and physical, financial and emotional abuse.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“In some cases, children under 18 years were also victims of domestic violence. Although only three such cases were reported between 2020 and last year, it is still something to be concerned about,” he told theSun.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Women’s Aid Organisation case management head Vaneezha Muniandi said the NGO recorded a total of 2,815 domestic violence cases between 2021 and this March."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“We recorded 195 cases through our hotline, face-to-face and via shelter residents between January and March this year. This is a large number considering it is just the first quarter of the year. We have no doubt there are similar cases reported to other NGOs or have gone unreported,” she said, adding that the most common cases involved physical and psychological abuse.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“However, most of the time survivors experience more than one type of abuse such as physical, psychological, social, financial and sexual. So, there is no definite answer to the types of abuse a domestic violence victim experiences since it’s usually a combination of several types of abuse.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“It often takes a lot of courage for a victim to speak up and do something about physical abuse. It’s even harder for victims to act when they suffer psychological, social, financial and sexual abuse,” she said.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="All Women’s Action Society (Awam) information and communications officer Amanda Sweeta Louis said it is important for the authorities to continue to work towards improving their response to such cases to better protect victims and ensure that perpetrators are held accountable."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“We acknowledge that authorities such as the Social Welfare Department and police have been actively working with NGOs in dealing with matters of domestic violence.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“Awam’s work is supported by the authorities, especially when the victims intend to seek protection from the abuser through an interim protection order.'
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“However, despite their efforts, there is still room for improvement in the way authorities handle domestic violence cases. Some survivors have reported feeling unsupported or ignored by the authorities. There are also instances of cases being mishandled or not taken seriously.”'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="She said there is also a persistent lack of sensitivity when interviewing domestic violence victims, with too many cases of male officers conducting the interview and asking inappropriate questions."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Lawyer Kokila Vaani Vadiveloo said punishment varies under the Domestic Violence Act (1994) as it is read together with the Penal Code."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“Police records indicate that the majority of domestic violence cases involve physical injuries or threats. An example of a charge for domestic violence is under Section 323 of the Penal Code (voluntarily causing hurt), which carries a punishment of imprisonment of up to one year, a fine of up to RM2,000, or both.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='“If one commits Penal Code offences against a spouse, the punishment may be greater, compared with that involving a third party. According to Section 326A of the Penal Code, anyone who causes hurt to their spouse commits an offence under sections 323, 324, 325, 326, 334 or 335 of the Penal Code, and could be imprisoned for a term of up to twice as long as the maximum term for such offences,” she said.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

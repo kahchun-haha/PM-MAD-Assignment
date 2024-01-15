@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/forgetTitle"
+        android:layout_width="333dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/light_blue"
+        android:gravity="center"
+        android:text="Are you sure want to exit?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/exitHolder"
+        android:layout_width="333dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/forgetTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/forgetTitle"
+        app:layout_constraintTop_toBottomOf="@+id/forgetTitle"
+        app:srcCompat="@drawable/dialog_container" />
+
+
+    <Button
+        android:id="@+id/noExit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:text="NO"
+        app:layout_constraintBottom_toBottomOf="@+id/yesExit"
+        app:layout_constraintStart_toStartOf="@+id/exitHolder"
+        app:layout_constraintTop_toBottomOf="@+id/forgetTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/yesExit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:text="YES"
+        app:layout_constraintBottom_toBottomOf="@+id/exitHolder"
+        app:layout_constraintEnd_toEndOf="@+id/exitHolder"
+        app:layout_constraintTop_toBottomOf="@+id/forgetTitle"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

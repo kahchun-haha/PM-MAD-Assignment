@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Theme.WhiteText"
+    android:background="@color/black"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:contentScrim="@color/black"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap"
+            app:toolbarId="@id/toolbar">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dv21"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Selangor records increase in domestic violence cases since 2017 - Police"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:fontFamily="@font/times_nr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="By Bernama - September 13, 2023 @ 6:05pm"
+                android:textSize="18sp"
+                android:fontFamily="@font/times_nr" />
+
+            <!-- First TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="SHAH ALAM: Selangor has recorded the highest number of domestic violence cases in the country since 2017, said state police chief Datuk Hussein Omar Khan."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <!-- Second TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="He said Selangor has become the state with the highest number of such cases over the past three years compared to other states, while for the period from January to August this year alone, 813 cases were reported."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='"The Royal Malaysia Police statistics show that there has been an increase in domestic violence cases in Selangor from 2017 to 2021 although there was a drop in 2022, with 466 cases," he said when speaking at the closing ceremony of the Selangor Police Domestic Violence Seminar 2023 here today.'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="He said for the first eight months of this year, the districts that recorded the highest number of cases were Gombak (147 cases), Kajang (91) and Petaling Jaya (79) whereas the districts that recorded the lowest cases were Shah Alam (21), Sabak Bernam (25) and Sungai Buloh (26)."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Hussein said wives were often the victims in these cases followed by children and husbands apart from other victims such as ex-husbands, ex-wives, other wives, daughters-in-law as well as sons-in-law and cousins."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="He said police viewed such cases of domestic violence seriously and the community should change the notion of the Malay proverb 'tidak menjaga tepi kain orang' (not being a busybody) considering such cases can cause harm and even lead to death if allowed to drag on."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="In the meantime, he said with regard to defamatory statements related to the allegation of an order to close 200 tahfiz centres in the state, the investigation paper on the case has been completed."
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text='We have referred (the matter) to the Deputy Public Prosecutor and there are one or two more things that we need to take action on, but there have been no arrests or instructions to make arrests so far," he also said. -- Bernama'
+                android:textSize="18sp"
+                android:fontFamily="@font/centurysb" />
+
+            <!-- Add more views as needed -->
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

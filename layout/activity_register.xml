@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Register">
+
+
+    <ImageView
+        android:id="@+id/register_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_white_gradient" />
+
+    <ImageView
+
+        android:id="@+id/register_deco1"
+        android:layout_width="168dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_deco" />
+
+    <ImageView
+        android:id="@+id/register_brandlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/black_modified" />
+
+
+    <ImageView
+        android:contentDescription="@string/log_in"
+        android:id="@+id/back_in_register"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/icon_backshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_foreground" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/register_button"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="@string/register_now"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.578"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.763" />-->
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_email"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_username"
+        app:layout_constraintTop_toBottomOf="@+id/register_username"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/register_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_email"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:background="@color/white"
+        android:textColorHint="@color/dark_grey"
+        android:id="@+id/register_username"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_brandlogo"
+        app:layout_constraintStart_toStartOf="@+id/register_brandlogo"
+        app:layout_constraintTop_toBottomOf="@+id/register_brandlogo"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <ImageView
+        android:id="@+id/register_register_btn"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/register_now"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/register_password"
+        app:layout_constraintStart_toStartOf="@+id/register_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_password"
+
+        app:srcCompat="@drawable/login_button_background" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/registerWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_now"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/register_register_btn"
+        app:layout_constraintEnd_toEndOf="@+id/register_register_btn"
+        app:layout_constraintStart_toStartOf="@+id/register_register_btn"
+        app:layout_constraintTop_toTopOf="@+id/register_register_btn" />
+
+    <ImageView
+        android:id="@+id/register_unhide"
+        android:layout_width="41dp"
+        android:layout_height="51dp"
+
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/register_password"
+        app:layout_constraintEnd_toEndOf="@+id/register_password"
+        app:layout_constraintTop_toTopOf="@+id/register_password"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/eye_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/register_hide"
+        android:layout_width="41dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/register_password"
+        app:layout_constraintEnd_toEndOf="@+id/register_password"
+        app:layout_constraintTop_toTopOf="@+id/register_password"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/eye2_removebg_preview" />
+
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1 symbol"
+        app:layout_constraintStart_toStartOf="@+id/register_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/uppercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1 uppercase"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toStartOf="@+id/lowercase"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toEndOf="@+id/symbol"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+    <TextView
+        android:id="@+id/lowercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1 lowercase"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toEndOf="@+id/register_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

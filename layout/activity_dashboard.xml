@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/rootLo"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/home_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_white_gradient" />
+
+    <!--    <AutoCompleteTextView-->
+<!--        android:id="@+id/search_bar"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:hint="@string/search_user"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.554"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.216" />-->
+
+
+    <!--    <com.google.android.gms.maps.MapView-->
+
+<!--        android:id="@+id/map"-->
+<!--        android:layout_width="231dp"-->
+<!--        android:layout_height="97dp"-->
+<!--        android:contentDescription="haha"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.078"-->
+<!--        app:liteMode="true" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/search_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/add_contact"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.538"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.319" />-->
+
+
+    <TextView
+        android:id="@+id/dashboard_profileName"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+
+        android:background="@drawable/chat_profile"
+        android:gravity="center"
+        android:text="li"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="@+id/justClick"
+        app:layout_constraintTop_toTopOf="@+id/sign_out" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="start"
+            app:labelVisibilityMode="labeled"
+            android:layout_marginTop="676dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/grey"
+            app:itemIconSize="48dp"
+            app:itemIconTint="@drawable/icon_changer"
+            app:itemPaddingBottom="6dp"
+            app:itemPaddingTop="1dp"
+            app:itemTextColor="@drawable/icon_changer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_nav">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:contentDescription="haha"
+        android:id="@+id/journal_Container"
+        android:layout_width="166dp"
+        android:layout_height="164dp"
+        android:background="@drawable/container_changer"
+        android:layout_marginStart="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/risk_Container"
+        app:layout_constraintStart_toStartOf="@+id/justClick"
+        app:layout_constraintTop_toTopOf="@+id/risk_Container"
+        app:srcCompat="@drawable/dashboard_container" />
+
+    <ImageView
+        android:id="@+id/journal_logo"
+        android:layout_width="86dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/journal_Container"
+        app:layout_constraintEnd_toEndOf="@+id/journal_Container"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="@+id/journal_Container"
+        app:layout_constraintTop_toTopOf="@+id/journal_Container"
+        app:layout_constraintVertical_bias="0.294"
+        app:srcCompat="@drawable/journal" />
+
+
+    <TextView
+        android:id="@+id/journal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Journal"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/journal_Container"
+        app:layout_constraintEnd_toEndOf="@+id/journal_Container"
+        app:layout_constraintStart_toStartOf="@+id/journal_Container"
+        app:layout_constraintTop_toBottomOf="@+id/journal_logo" />
+
+    <ImageView
+        android:contentDescription="haha"
+        android:id="@+id/risk_Container"
+        android:layout_width="166dp"
+        android:layout_height="164dp"
+        android:background="@drawable/container_changer"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/justClick"
+        app:layout_constraintTop_toBottomOf="@+id/home_pageTitle"
+        app:srcCompat="@drawable/dashboard_container" />
+
+    <ImageView
+        android:id="@+id/risk_logo"
+        android:layout_width="150dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="@+id/risk_Container"
+        app:layout_constraintEnd_toEndOf="@+id/risk_Container"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/risk_Container"
+        app:layout_constraintTop_toTopOf="@+id/risk_Container"
+        app:layout_constraintVertical_bias="0.294"
+        app:srcCompat="@drawable/risk_removebg_preview" />
+
+    <TextView
+        android:id="@+id/risk_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Risk Assessment"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/risk_Container"
+        app:layout_constraintEnd_toEndOf="@+id/risk_Container"
+        app:layout_constraintStart_toStartOf="@+id/risk_Container"
+        app:layout_constraintTop_toBottomOf="@+id/risk_logo" />
+
+    <ImageView
+        android:id="@+id/red_BTN"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152"
+        app:srcCompat="@drawable/chat_input" />
+
+    <ImageView
+        android:id="@+id/justClick"
+        android:layout_width="363dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629"
+        app:srcCompat="@drawable/contacts" />
+
+    <ImageView
+        android:id="@+id/redButton"
+        android:layout_width="120dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="48dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/justClick"
+        app:srcCompat="@drawable/redbutton" />
+
+    <ImageView
+        android:id="@+id/people"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/white_circle"
+        app:layout_constraintEnd_toEndOf="@+id/justClick"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/justClick"
+        app:layout_constraintTop_toTopOf="@+id/justClick"
+        app:srcCompat="@drawable/e_contacts_foreground" />
+
+    <TextView
+        android:id="@+id/emergencyContactWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Emergency Contacts"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/justClick"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/justClick"
+        app:layout_constraintTop_toTopOf="@+id/justClick" />
+
+    <ImageView
+        android:id="@+id/sign_out"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icon_backshape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sign_out_foreground" />
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/home_deco2"-->
+<!--        android:layout_width="226dp"-->
+<!--        android:layout_height="277dp"-->
+
+<!--        android:layout_marginStart="236dp"-->
+<!--        android:layout_marginTop="396dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/gradient" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/home_deco1"-->
+<!--        android:layout_width="226dp"-->
+<!--        android:layout_height="277dp"-->
+<!--        android:layout_marginEnd="228dp"-->
+<!--        android:layout_marginBottom="516dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:srcCompat="@drawable/gradient" />-->
+
+    <ImageView
+        android:contentDescription="@string/password"
+        style="?android:borderlessButtonStyle"
+
+        android:id="@+id/camera_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_placeholder"
+        app:layout_constraintEnd_toEndOf="@+id/camera_placeholder"
+        app:layout_constraintStart_toStartOf="@+id/camera_placeholder"
+        app:layout_constraintTop_toTopOf="@+id/camera_placeholder"
+        app:srcCompat="@drawable/cam_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/camera_placeholder"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/redButton"
+        app:layout_constraintEnd_toStartOf="@+id/redButton"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/redButton"
+        app:layout_constraintVertical_bias="0.512"
+        app:srcCompat="@drawable/icon_backshape" />
+
+
+    <ImageView
+        android:id="@+id/gallery_placeholder"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/redButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/redButton"
+        app:layout_constraintTop_toTopOf="@+id/redButton"
+        app:srcCompat="@drawable/icon_backshape" />
+
+    <ImageView
+        android:id="@+id/toBeReplaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="76dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/black_modified" />
+
+    <ImageView
+        android:contentDescription="haha"
+        style="?android:borderlessButtonStyle"
+        android:id="@+id/gallery_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gallery_placeholder"
+        app:layout_constraintEnd_toEndOf="@+id/gallery_placeholder"
+        app:layout_constraintStart_toStartOf="@+id/gallery_placeholder"
+        app:layout_constraintTop_toTopOf="@+id/gallery_placeholder"
+        app:srcCompat="@drawable/_375106" />
+
+    <TextView
+        android:id="@+id/home_pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Home"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/sign_out"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/dashboard_profileName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/profilePage"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

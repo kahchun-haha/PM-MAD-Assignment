@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EachPost">
+
+
+    <ImageView
+        android:id="@+id/post_itself"
+        android:layout_width="392dp"
+        android:layout_height="186dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/post_shape"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_in_post"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/post_profilePic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/chat_profile"
+        android:gravity="center"
+        android:text="li"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/post_itself"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/post_itself"
+        app:layout_constraintTop_toTopOf="@+id/post_itself" />
+
+
+    <TextView
+        android:id="@+id/post_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="name"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/post_profilePic"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/post_profilePic"
+        app:layout_constraintTop_toBottomOf="@+id/post_profilePic" />
+
+
+    <TextView
+        android:id="@+id/post_Topic"
+        android:layout_width="246dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="Topic goes here"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/post_profilePic"
+        app:layout_constraintTop_toTopOf="@+id/post_profilePic" />
+
+
+    <TextView
+        android:textSize="15sp"
+android:textColor="@color/black"
+        android:id="@+id/post_Description"
+        android:layout_width="247dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="Description goes here"
+        app:layout_constraintEnd_toEndOf="@+id/post_Topic"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/post_Topic"
+        app:layout_constraintTop_toBottomOf="@+id/post_Topic" />
+
+    <ImageView
+        android:id="@+id/back_in_post"
+        android:layout_width="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icon_backshape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_foreground" />
+
+    <ImageView
+        android:id="@+id/commentView"
+        android:layout_width="76dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/comment_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_itself" />
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Comment"
+        android:textColor="@color/light_blue"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/commentView"
+        app:layout_constraintTop_toBottomOf="@+id/post_itself" />
+
+    <ListView
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/light_blue"
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentText" />
+
+    <EditText
+        android:id="@+id/comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/chat_input"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:hint="Add a comment"
+        android:inputType="textMultiLine"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/send_comment"
+        android:layout_width="45dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@drawable/send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
