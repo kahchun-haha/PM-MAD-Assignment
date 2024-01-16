@@ -295,7 +295,6 @@ class ChatListAdpater extends ArrayAdapter<ChatListUser>{
     }
 }
 
-
 class ChatListUser{
     private String username;
     private String lastMessage;
@@ -320,6 +319,5 @@ class ChatListUser{
     public String getLastMessage(){
         return lastMessage;
     }
-
 
 }
