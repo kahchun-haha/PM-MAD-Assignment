@@ -173,7 +173,6 @@ public class Chat extends AppCompatActivity {
         });
 
 
-
         chatAdapter = new ChatAdapter(this, android.R.layout.simple_list_item_1,chat);
 
         listView = findViewById(R.id.chat);
