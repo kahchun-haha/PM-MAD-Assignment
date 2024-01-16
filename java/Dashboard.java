@@ -115,7 +115,6 @@ public class Dashboard extends AppCompatActivity implements OnMapReadyCallback, 
 
     private static final int CAMERA_REQUEST = 1888;
 
-
     private TextView homeWord;
 
     private FirebaseStorage storage;
