@@ -45,7 +45,6 @@ public class Helpline extends AppCompatActivity{
         startActivity(i);
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
