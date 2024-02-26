@@ -20,5 +20,5 @@
 - Render a community platform for victims of domestic violence to share their personal experience
 - 
 ### 📦 UI
-Below is a screenshot of the home page of the application.
-![alt text](https://github.com/kahchun-haha/PM-MAD-Assignment/blob/main/homePage.png)
+![Below is a screenshot of the home page of the application.
+](https://github.com/kahchun-haha/PM-MAD-Assignment/blob/main/homePage.png)
