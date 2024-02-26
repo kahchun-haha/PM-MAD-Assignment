@@ -2,7 +2,7 @@
 ## Domestic Violence App with 5 functional modules consists of Emergency Alarm, Evidence Capture, Support and Helplines, Education, Risk Assessment
 
 ### Group members
-| Attempt | #1    | 
+| Name | Matric Number    | 
 | :--:   | :--: | 
 | Seconds | 301   | 
 
