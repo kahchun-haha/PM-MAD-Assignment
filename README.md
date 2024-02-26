@@ -1,10 +1,11 @@
 # WIA2007 Mobile Application Development Group Assignment 2023/2024 📱
-## Community Safe App
-Group Members:
-Name	Matric Number
+## Domestic Violence App with 5 functional modules consists of Emergency Alarm, Evidence Capture, Support and Helplines, Education, Risk Assessment
+
+### Group members
+| Attempt | #1    | 
+| :--:   | :--: | 
+| Seconds | 301   | 
+
 
 ### 🎯 PROJECT GOALS
 
-| Attempt | #1    | #2    |
-| :---:   | :---: | :---: |
-| Seconds | 301   | 283   |
