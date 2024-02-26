@@ -18,5 +18,7 @@
 - Provide victims a filtered list of national organizations that work on domestic violence with their helplines
 - Allow victims to quickly seek help from their trusted friends or family members by sharing their real time location in times of emergency
 - Render a community platform for victims of domestic violence to share their personal experience
-
+- 
+### 📦 UI
+Below is a screenshot of the home page of the application.
 ![alt text](https://github.com/kahchun-haha/PM-MAD-Assignment/blob/main/homePage.png)
