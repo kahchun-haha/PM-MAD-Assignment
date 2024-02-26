@@ -3,8 +3,8 @@
 
 ### Group members
 | Name        | Matric Number | 
-| :---:       | :---:         | 
-| Hor Ji Xuan            | 22004836| 
+| :-:       | :-:         | 
+| Hor Ji Xuan | 22004836| 
 | Ng Jie Ru |100101
 
 ### 🎯 PROJECT GOALS
