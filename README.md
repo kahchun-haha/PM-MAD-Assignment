@@ -5,7 +5,9 @@
 | Name        | Matric Number | 
 | :-:       | :-:         | 
 | Hor Ji Xuan | 22004836| 
-| Ng Jie Ru |100101
+| Ng Jie Ru |22004759
+| Leow Jia Sheng | 22004885
+| a
 
 ### 🎯 PROJECT GOALS
 
