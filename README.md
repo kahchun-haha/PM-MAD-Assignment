@@ -11,6 +11,11 @@
 | Chan Jia Shin  | 22004766      |
 
 ### 🎯 PROJECT GOALS
+- Reduce domestic violence occurrences
+- Raise awareness among domestic violence victims to stand up for themselves
+
+### 🎉 PROJECT OBJECTIVES
 - Provide victims a filtered list of national organizations that work on domestic violence with their helplines
 - Allow victims to quickly seek help from their trusted friends or family members by sharing their real time location in times of emergency
 - Render a community platform for victims of domestic violence to share their personal experience
+
