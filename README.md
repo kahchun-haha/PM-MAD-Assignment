@@ -19,4 +19,4 @@
 - Allow victims to quickly seek help from their trusted friends or family members by sharing their real time location in times of emergency
 - Render a community platform for victims of domestic violence to share their personal experience
 
-![alt text]https://github.com/kahchun-haha/PM-MAD-Assignment/blob/main/homePage.png
+![alt text](https://github.com/kahchun-haha/PM-MAD-Assignment/blob/main/homePage.png)
