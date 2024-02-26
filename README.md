@@ -4,7 +4,7 @@
 ### Group members
 | Name               | Matric Number | 
 | :----------:       | :---:         | 
-| Seconds            | 301           | 
+| Hor Ji Xuan            | 22004836           | 
 
 
 ### 🎯 PROJECT GOALS
