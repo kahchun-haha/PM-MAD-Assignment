@@ -14,7 +14,7 @@ Risk Assessment - A list of domestic violence related questions are prepared bas
 
 ### Tools and Language
 Utilized Android Studio (Giraffe version), Java (JDK 17), XML, Firebase Realtime Database
-- 
+
 ### 📦 UI  : screenshot of home page of the application
 ![Below is a screenshot of the home page of the application.
 ](https://github.com/kahchun-haha/PM-MAD-Assignment/blob/main/homePage.png)
