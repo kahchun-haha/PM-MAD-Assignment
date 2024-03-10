@@ -1,23 +1,19 @@
 # WIA2007 Mobile Application Development Group Assignment 2023/2024 📱
-## Domestic Violence App with 5 functional modules consists of Emergency Alarm, Evidence Capture, Support and Helplines, Education, Risk Assessment
+This project is developed for the course Mobile Application Development. In this project, we had selected SDG 16 as our goal, and more specifically, in the context of domestic violence. Our app includes five main functional modules, which include emergency alarm, evidence capture, support helplines, education and risk assessment.
 
-### 🚀 Group members:
-| Name           | Matric Number | 
-| :-------------:| :------------:| 
-| Hor Ji Xuan    | 22004836      | 
-| Ng Jie Ru      | 22004759      |
-| Leow Jia Sheng | 22004885      |
-| Lim Kah Chun   | 22004859      |
-| Chan Jia Shin  | 22004766      |
+### Usage
+Emergency Alarm - Users can add other registered users as their emergency contact, allowing live location sharing when emergency assistance is requested.
 
-### 🎯 PROJECT GOALS
-- Reduce domestic violence occurrences
-- Raise awareness among domestic violence victims to stand up for themselves
+Evidence Capture - Users can take daily journal, and take photo which are then saved in Firebase. Photo are not lost when phone is lost or discovered by the abusers in the phone.
 
-### 🎉 PROJECT OBJECTIVES
-- Provide victims a filtered list of national organizations that work on domestic violence with their helplines
-- Allow victims to quickly seek help from their trusted friends or family members by sharing their real time location in times of emergency
-- Render a community platform for victims of domestic violence to share their personal experience
+Support helplines - Users can search through a list of national helplines associated with domestic violence for support, and share experience on forum with other users.
+
+Education - A dedicated education hub for domestic violence contents is provided for the users to gain more knowledge on the context.
+
+Risk Assessment - A list of domestic violence related questions are prepared based on the CAADA-DASH framework developed by UK's MARAC, helping users to be more aware of their immediate situations.
+
+### Tools and Language
+Utilized Android Studio (Giraffe version), Java (JDK 17), XML, Firebase Realtime Database
 - 
 ### 📦 UI  : screenshot of home page of the application
 ![Below is a screenshot of the home page of the application.
